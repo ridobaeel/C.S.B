@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ِCRYPTUS SHOP</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+<script src="https://replit.com/public/js/repl-auth-v2.js"></script>
+</head>
+<body>
+  <header
+    <body>
+      <h1 id="title">CRYPTUS SHOP</h1>
+      <p id="ipInfo">Your IP is: Loading...</p>
+      <style>
+        #ipInfo {
+          color: white;
+          text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white;
+        }
+      </style>
+
+      <script>
+        // JavaScript code to fetch and display user's IP address
+        fetch('https://api64.ipify.org?format=json')
+          .then(response => response.json())
+          .then(data => {
+            const userIP = data.ip;
+            document.getElementById('ipInfo').textContent = `Your IP is: ${userIP}`;
+          })
+          .catch(error => {
+            console.error('Error fetching IP address:', error);
+          });
+      </script>
+    </body>
+  </header>
+  <main>
+    <section id="products">
+      <div class="product">
+        <img src="https://i.pinimg.com/736x/dd/b2/0e/ddb20e42725a4ee196523954b43a9856.jpg"
+        <h2>1,500,000 Rx</h2>
+        <p>The offer is only available here. Buy now and be the first rich person in our group</p>
+        <span class="price">$4999</span>
+        <button class="buy-button">BUY</button>
+      </div>
+      <div class="product">
+        <img src="https://i.pinimg.com/564x/d1/16/fa/d116fa7a94b699c3de548d43c0a560b4.jpg"
+        <h2>Saitama blood</h2>
+        <p>The new drug released in 2023 is called Saitama's Blood. Scientists have discovered that a person can become stronger like the character Saitama from Onepinch Man. Buy one now and try the drug. Very valid 5/11/2024 When you take one, it only takes 4 days of push-ups and running. Just eat bananas and you will see the results in the end</p>
+        <span class="price">$12999</span>
+        <button class="buy-button">BUY</button>
+      </div>
+      <div class="product">
+        <img src="https://i.pinimg.com/564x/d7/1f/1f/d71f1f49bd11ab23347abcdf84ea6804.jpg"
+        <h2>S96</h2>
+        <p>The drug S96 takes you to hell. I dare you to stay alive
+        When you eat it at the beginning, you will feel sleepy after a while, and the nightmares will end in an hour</p>
+        <span class="price">$599</span>
+        <button class="buy-button">BUY</button>
+      </div>
+      
+      <div class="product">
+        <img src="https://i.pinimg.com/564x/30/7e/76/307e769d7d4767ef38bd5591d92817a4.jpg"
+        <h2>Cursed word</h2>
+        <p>A cursed word has serious damage. It is safe if you keep it, but try saying it and look at anyone who heard it from you. How will they... bear your responsibilities for what will happen?r</p>
+        <span class="price">$50000</span>
+        <button class="buy-button">BUY</button>
+      </div>
+      
+      <div class="product">
+        <img src="https://i.pinimg.com/564x/c2/35/81/c235814f9672e9dcff378895e61fcad9.jpg"
+        <h2>Heart control</h2>
+        <p>Controlling the heart of anything is a person who only works on humans. You can touch it, feel it, and you can even step on it. You can do anything just with your empty hands. It may take a month of training, but don't worry, it will happen quickly.
+
+          Challenge ⚠: This could cause people to be killed easily. The important thing is to bear your responsibilities and consequences</p>
+        <span class="price">$75000</span>
+        <button class="buy-button">BUY</button>
+      </div>
+      <!-- يمكنك إضافة المزيد من المنتجات هنا -->
+    </section>
+    <p><span style="color: white;">more soon...</span></p>
+  </main>
+  <footer>
+    <p>You are responsible &copy; 2023</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
